@@ -9,26 +9,26 @@ body {
 }
 
 main {
-  position: relative; /* Añadido para que los pseudoelementos se posicionen correctamente */
+  position: relative; 
   width: 100%;
   max-width: 400px;
   padding: 20px;
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 15px; /* Añadido para bordes redondeados */
+  border-radius: 15px; 
 }
 
 main::before {
   content: '';
   position: absolute;
-  top: -2v0px;
+  top: -20px;
   left: -20px;
   right: -20px;
   bottom: -20px;
   background-color: #baeebd;
   z-index: -1;
   border-radius: 15px;
-  opacity: 0.6; /* Ajusta la opacidad del fondo verde */ /* Ajusta la opacidad del fondo verde */
+  opacity: 0.6; 
 }
 
 form {
@@ -37,7 +37,7 @@ form {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -49,15 +49,15 @@ h1 {
 label {
   margin-bottom: 5px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="texto"], input[type="correo"], textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 10px; /* Aumentado para bordes más redondeados */
-  font-size: 14px;
+  border-radius: 10px;  
+  font-size: 12px;
 }
 
 textarea {
@@ -66,18 +66,27 @@ textarea {
   resize: none;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
 input[type="radio"], input[type="checkbox"] {
   margin-right: 10px;
 }
 
 button {
-  padding: 12px 20px;
+  padding: 10px 16px;
   border: none;
-  border-radius: 10px; /* Aumentado para bordes más redondeados */
+  border-radius: 10px;  
   background-color: #4CAF50;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 button:hover {
@@ -110,27 +119,3 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Media queries para diseño móvil */
-@media (max-width: 6o0px) {
-  main {
-    padding: 10px;
-    border-radius: 10px; /* Añadido para bordes redondeados */
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  label {
-    font-size: 14px;
-  }
-
-  input[type="text"], input[type="email"], textarea {
-    font-size: 12px;
-  }
-
-  button {
-    padding: 10px 16px;
-    font-size: 14px;
-  }
-}
