@@ -52,7 +52,7 @@ label {
   font-size: 14px;
 }
 
-input[type="texto"], input[type="correo"], textarea {
+input[type="text"], input[type="email"], textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
